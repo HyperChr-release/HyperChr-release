@@ -4,12 +4,12 @@
 
 This project provides Python implementations of four quantization methods for efficient similarity search and data compression:
 
-- **HPQ**: Hierarchical Product Quantization (Our Method)
+- **HyperChr**: Our Method
 - **LOPQ**: Locally Optimized Product Quantization
 - **OPQ**: Optimized Product Quantization
 - **PQ**: Product Quantization
 
-Our primary contribution is the **HPQ** method, which is designed to improve upon existing quantization techniques by introducing a hierarchical approach for better accuracy and efficiency.
+Our primary contribution is the **HyperChr** method, which is designed to improve upon existing quantization techniques by introducing a hierarchical approach for better accuracy and efficiency.
 
 ## Table of Contents
 
@@ -38,9 +38,9 @@ Our primary contribution is the **HPQ** method, which is designed to improve upo
 
 ## Algorithms
 
-### HPQ (Our Method)
+### HyperChr (Our Method)
 
-**Hierarchical Product Quantization (HPQ)** is our novel approach that introduces a hierarchical structure to product quantization, allowing for more efficient encoding and decoding of high-dimensional data. HPQ adaptively quantizes data based on its distribution and employs a hierarchical grouping mechanism to improve both compression and retrieval performance under memory constraints.
+**HyperChr** is our novel approach that introduces a hierarchical structure to product quantization, allowing for more efficient encoding and decoding of high-dimensional data. HPQ adaptively quantizes data based on its distribution and employs a hierarchical grouping mechanism to improve both compression and retrieval performance under memory constraints.
 
 **Key Features of HPQ**:
 
@@ -97,7 +97,7 @@ Our primary contribution is the **HPQ** method, which is designed to improve upo
 
 ### HPQ Example
 
-Here's how to use our **HPQ** implementation:
+Here's how to use our **HyperChr** implementation:
 
 ```python
 import numpy as np
