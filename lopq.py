@@ -1,5 +1,4 @@
-# MIT License
-# Copyright (c) 2024 Wang Li, Peking University
+
 
 import numpy as np
 from .opq import OPQ
