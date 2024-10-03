@@ -16,7 +16,7 @@ Our primary contribution is the **HyperChr** method, which is designed to improv
 - [Introduction](#introduction)
 - [Features](#features)
 - [Algorithms](#algorithms)
-  - [HPQ (Our Method)](#hpq-our-method)
+  - [HyperChr (Our Method)](#hpq-our-method)
   - [LOPQ](#lopq)
   - [OPQ](#opq)
   - [PQ](#pq)
@@ -42,7 +42,7 @@ Our primary contribution is the **HyperChr** method, which is designed to improv
 
 **HyperChr** is our novel approach that introduces a hierarchical structure to product quantization, allowing for more efficient encoding and decoding of high-dimensional data. HPQ adaptively quantizes data based on its distribution and employs a hierarchical grouping mechanism to improve both compression and retrieval performance under memory constraints.
 
-**Key Features of HPQ**:
+**Key Features of HyperChr**:
 
 - **Adaptive Quantization**: Automatically computes quantiles based on data distribution for finer grouping.
 - **Memory Optimization**: Dynamically calculates the number of centroids per group according to memory constraints.
@@ -95,19 +95,19 @@ Our primary contribution is the **HyperChr** method, which is designed to improv
 
 ## Usage
 
-### HPQ Example
+### HyperChr Example
 
 Here's how to use our **HyperChr** implementation:
 
 ```python
 import numpy as np
-from hpq import HPQ
+from hpq_Q_A(3) import HPQ_Q_A
 
 # Generate random data
 data = np.random.rand(10000, 128)  # 10000 samples, each with 128 dimensions
 
 # Initialize the HPQ model
-hpq = HPQ(
+hpq = HPQ_Q_A(
     num_groups=4,          # Number of quantization groups per dimension
     compression_rate=0.5,  # Compression rate (e.g., 0.5 for 50% compression)
     n_sub=4,               # Number of subspaces
