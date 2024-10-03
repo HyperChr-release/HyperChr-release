@@ -110,7 +110,7 @@ data = np.random.rand(10000, 128)  # 10000 samples, each with 128 dimensions
 hpq = HPQ(
     num_groups=4,          # Number of quantization groups per dimension
     compression_rate=0.5,  # Compression rate (e.g., 0.5 for 50% compression)
-    n_sub=2,               # Number of subspaces
+    n_sub=4,               # Number of subspaces
     pq_iter=20             # Number of iterations for k-means clustering
 )
 
@@ -131,18 +131,13 @@ print(f"Reconstruction Error: {error}")
 ## Project Structure
 
 ```plaintext
-quantization-methods/
-├── hpq.py              # HPQ implementation (Our Method)
+
+├── HPQ_Q_A.py              # HPQ implementation (Our Method)
 ├── lopq.py             # LOPQ implementation
 ├── opq.py              # OPQ implementation
 ├── pq.py               # PQ implementation
 ├── requirements.txt    # List of dependencies
 ├── README.md           # Project description
-└── examples/
-    ├── hpq_example.py  # Usage example for HPQ
-    ├── lopq_example.py # Usage example for LOPQ
-    ├── opq_example.py  # Usage example for OPQ
-    └── pq_example.py   # Usage example for PQ
 ```
 
 ## Contributing
