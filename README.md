@@ -1,4 +1,4 @@
-# High-Performance Quantization Methods: HPQ, LOPQ, OPQ, PQ
+# HyperChr: QUANTIZATION OF HETEROGENEOUSLY DISTRIBUTED MATRICES THROUGH DISTRIBUTION-AWARE SUBSPACE PARTITIONIN
 
 ## Introduction
 
@@ -71,13 +71,13 @@ Our primary contribution is the **HyperChr** method, which is designed to improv
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your_username/quantization-methods.git
+   git clone https://github.com/HyperChr-release/HyperChr-release.git
    ```
 
 2. **Navigate to the project directory**
 
    ```bash
-   cd quantization-methods
+   cd HyperChr-release
    ```
 
 3. **Install dependencies**
